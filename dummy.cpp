@@ -17,7 +17,7 @@ auto fact(size_t n) ->size_t
     return f;
 }
 
-auto sum(const std::vector<size_t>& arr)
+auto sum(const std::vector<size_t>& arr) ->size_t
 {
     std::cout << "id: "<< std::this_thread::get_id() << '\n';
     size_t sum = 0;
