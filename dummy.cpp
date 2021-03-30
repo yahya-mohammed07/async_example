@@ -8,8 +8,7 @@ auto fact(size_t n) ->size_t
 {
     size_t f = 0;
     std::cout << "id: "<< std::this_thread::get_id() << '\n';
-    for (int64_t i = 0; i < 10000'0000; ++i)
-    {
+    for (int64_t i = 0; i < 10000'0000; ++i) {
         f = 1;
         for ([[maybe_unused]]size_t j = n; j >= 1; --j)
             f *= j;
